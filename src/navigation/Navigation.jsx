@@ -10,7 +10,10 @@ const Stack = createNativeStackNavigator();
 export default function Navigation() {
   return (
     <Stack.Navigator
-      screenOptions={{ headerTransparent: true, headerTitle: "" }}
+      screenOptions={{
+        headerTransparent: true,
+        headerTitle: "",
+      }}
     >
       <Stack.Screen name="StepOne" component={StepOne} />
       <Stack.Screen
